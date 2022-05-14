@@ -15,8 +15,8 @@ int main() {
 	}
 	int ans=0;
 	sort(a, a+n);
-	for(int i=0; i<n-1; i+=2) {
-		ans+=abs(a[i]-a[i+1]);
+	for(int i=0; i<n-1; i+=2) { //because there are an even amount of players in the group, each member will get a partner so we iterate i through every other person
+		ans+=abs(a[i]-a[i+1]); //find the distance between each player and their partner
 	}
 	cout << ans;
 }
