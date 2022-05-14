@@ -34,7 +34,7 @@ int main() {
 	}
 	if(v.size()/2!=count) //if the amount of pairs found doesn't match the total amount of pairs, then the answer can't be reached
 		cout << ":(";
-	else { //after all edge cases have been covered, we can successfully uncover an answer
+	else { //after all edge cases have been covered, we can successfully uncover a character answer
 		for(int i=0; i<v.size()/2+a; ++i) {
 			cout << t[i];
 		}
