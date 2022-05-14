@@ -10,5 +10,5 @@ int main() {
 	
 	string s;
 	cin >> s;
-	cout << (1+s.size())*25+1;
+	cout << (1+s.size())*25+1; //basic pattern assesment based off of the sample cases
 }
