@@ -6,15 +6,15 @@ using namespace std;
 
 const int mxN=//;
 
-bool prime[mxN];
+bool isPrime[mxN];
 
 void sieveOfEratosthenes() {
-	memset(prime, 1, sizeof(prime));
-	prime[0]=0, prime[1]=0;
+	memset(isPrime, 1, sizeof(isPrime));
+	isPrime[0]=0, isPrime[1]=0;
 	for(int i=2; i*i<=mxN; ++i) {
-		if(prime[i]) {
+		if(isPrime[i]) {
 			for(int j=i*i; j<=mxN; j+=i) {
-				prime[j]=0;
+				isPrime[j]=0;
 			}
 		}
 	}
