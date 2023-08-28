@@ -8,7 +8,7 @@ const int mxN=//;
 
 bool prime[mxN];
 
-void SieveOfEratosthenes() {
+void sieveOfEratosthenes() {
 	memset(prime, 1, sizeof(prime));
 	prime[0]=0, prime[1]=0;
 	for(int i=2; i*i<=mxN; ++i) {
@@ -24,5 +24,5 @@ int main() {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
 
-	SieveOfEratosthenes();
+	sieveOfEratosthenes();
 }
